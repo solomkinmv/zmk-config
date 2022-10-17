@@ -92,7 +92,7 @@
         Media_Nav {
             bindings = <
    &kp C_PREV  &kp C_VOL_UP      &kp C_VOL_DN    &kp C_NEXT  &trans        &trans         &trans         &trans       &trans     &trans
- &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &trans  &kp CAPSLOCK       &kp LEFT       &kp DOWN       &kp UP  &kp RIGHT
+ &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &kp CAPSLOCK       &kp LEFT       &kp DOWN       &kp UP  &kp RIGHT
        &trans        &trans            &trans        &trans  &trans    &kp DELETE       &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP    &kp END
                                                      &trans  &trans     &kp ENTER  &kp BACKSPACE
             >;

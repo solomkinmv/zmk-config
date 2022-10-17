@@ -103,7 +103,7 @@
        &trans        &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
        &trans        &trans            &trans          &trans  &trans  &trans  &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_UP  &mwh SCROLL_RIGHT
-                                                       &trans  &trans  &trans  &trans
+                                                       &trans  &trans  &mwh LCLK    &mwh RCLK
             >;
         };
 

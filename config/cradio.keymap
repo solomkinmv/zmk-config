@@ -81,7 +81,7 @@
         Base {
             bindings = <
             &kp Q               &kp W               &kp E                   &kp R               &kp T           &kp Y           &kp U               &kp I                   &kp O               &kp P
-            &hm LEFT_GUI A      &hm LEFT_ALT S      &hm LEFT_CONTROL D      &hm LEFT_SHIFT F    &kp G           &kp H           &hm RIGHT_SHIFT J   &hm RIGHT_CONTROL K     &hm RIGHT_ALT L     &hm RIGHT_GUI SEMICOLON
+            &hm LCMD A          &hm LALT S          &hm LCTRL D             &hm LSHFT F         &kp G           &kp H           &hm RSHFT J         &hm RCTRL K             &hm RALT L          &hm RCMD SEMICOLON
             &kp Z               &kp X               &kp C                   &kp V               &kp B           &kp N           &kp M               &kp COMMA               &kp DOT             &kp SLASH
                                                                             &lt 1 SPACE         &lt 2 TAB       &lt 4 ENTER     &lt 3 BACKSPACE
             >;
@@ -90,7 +90,7 @@
         Media_Nav {
             bindings = <
             &kp C_PREV      &kp C_VOL_UP    &kp C_VOL_DN        &kp C_NEXT      &trans          &trans              &trans          &trans         &trans           &trans
-            &kp LEFT_GUI    &kp LEFT_ALT    &kp LEFT_CONTROL    &kp LEFT_SHIFT  &trans          &kp CAPSLOCK        &kp LEFT        &kp DOWN       &kp UP           &kp RIGHT
+            &kp LCMD        &kp LALT        &kp LCTRL           &kp LSHFT       &trans          &kp CAPSLOCK        &kp LEFT        &kp DOWN       &kp UP           &kp RIGHT
             &trans          &trans          &trans              &trans          &trans          &kp DELETE          &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END
                                                                 &trans          &trans          &kp ENTER           &kp BACKSPACE
             >;
@@ -99,7 +99,7 @@
         BT_Mouse {
             bindings = <
             &trans          &trans          &trans              &trans              &trans          &trans      &mkp MB1            &mkp MB2            &trans          &trans
-            &kp LEFT_GUI    &kp LEFT_ALT    &kp LEFT_CONTROL    &kp LEFT_SHIFT      &trans          &trans      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_UP    &mmv MOVE_RIGHT
+            &kp LCMD        &kp LALT        &kp LCTRL           &kp LSHFT           &trans          &trans      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_UP    &mmv MOVE_RIGHT
             &out OUT_TOG    &bt BT_SEL 0    &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_CLR      &trans      &msc SCRL_LEFT      &msc SCRL_DOWN      &msc SCRL_UP    &msc SCRL_RIGHT
                                                                 &trans              &trans          &trans      &trans
             >;
@@ -108,7 +108,7 @@
         Num_Func {
             bindings = <
             &kp LEFT_BRACKET                &kp N7              &kp N8                  &kp N9                  &kp RIGHT_BRACKET       &kp ESC     &kp F7                  &kp F8                  &kp F9              &kp F12
-            &hm LEFT_GUI SINGLE_QUOTE       &hm LEFT_ALT N4     &hm LEFT_CONTROL N5     &hm LEFT_SHIFT N6       &kp EQUAL               &kp DOT     &hm RIGHT_SHIFT F4      &hm RIGHT_CONTROL F5    &hm RIGHT_ALT F6    &hm RIGHT_GUI F11
+            &hm LCMD SINGLE_QUOTE           &hm LALT N4         &hm LCTRL N5            &hm LSHFT N6            &kp EQUAL               &kp DOT     &hm RSHFT F4            &hm RCTRL F5            &hm RALT F6         &hm RCMD F11
             &kp GRAVE                       &kp N1              &kp N2                  &kp N3                  &kp BACKSLASH           &none       &kp F1                  &kp F2                  &kp F3              &kp F10
                                                                                         &kp N0                  &kp MINUS               &none       &none
             >;
@@ -117,7 +117,7 @@
         Sym {
             bindings = <
             &kp LEFT_BRACE          &kp AMPERSAND       &kp ASTERISK    &kp LEFT_PARENTHESIS    &kp RIGHT_BRACE         &trans          &trans              &trans              &trans          &trans
-            &kp DOUBLE_QUOTES       &kp DOLLAR          &kp PERCENT     &kp CARET               &kp PLUS                &trans          &kp RIGHT_SHIFT     &kp RIGHT_CONTROL   &kp RIGHT_ALT   &kp RIGHT_GUI
+            &kp DOUBLE_QUOTES       &kp DOLLAR          &kp PERCENT     &kp CARET               &kp PLUS                &trans          &kp RSHFT           &kp RCTRL           &kp RALT        &kp RCMD
             &kp TILDE               &kp EXCLAMATION     &kp AT_SIGN     &kp HASH                &kp PIPE                &trans          &trans              &trans              &trans          &trans
                                                                         &kp RIGHT_PARENTHESIS   &kp UNDERSCORE          &trans          &trans
             >;

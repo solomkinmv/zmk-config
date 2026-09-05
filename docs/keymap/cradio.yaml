@@ -1,0 +1,60 @@
+layout: {zmk_keyboard: cradio}
+layers:
+  Base:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - {t: A, h: LCMD}
+    - {t: S, h: LALT}
+    - {t: D, h: LCTRL}
+    - {t: F, h: LSHFT}
+    - G
+    - H
+    - {t: J, h: RSHFT}
+    - {t: K, h: RCTRL}
+    - {t: L, h: RALT}
+    - {t: ;, h: RCMD}
+  - [Z, X, C, V, B, N, M, ',', ., /]
+  - - {t: SPACE, h: Nav}
+    - {t: TAB, h: Mouse}
+    - {t: ENTER, h: Sym}
+    - {t: BACKSPACE, h: Num/Fn}
+  Media & Navigation:
+  - [PREV, VOL UP, VOL DN, NEXT, '', '', '', '', '', '']
+  - [LCMD, LALT, LCTRL, LSHFT, '', Caps Word, LEFT, DOWN, UP, RIGHT]
+  - ['', '', '', '', '', DELETE, HOME, PAGE DOWN, PAGE UP, END]
+  - - {type: held}
+    - ''
+    - ENTER
+    - BACKSPACE
+  Bluetooth & Mouse:
+  - ['', '', '', '', '', '', Mouse Left, Mouse Right, '', '']
+  - [LCMD, LALT, LCTRL, LSHFT, '', '', Mouse Left, Mouse Down, Mouse Up, Mouse Right]
+  - [Output Toggle, BT 0, BT 1, BT 2, BT Clear, '', Scroll Left, Scroll Down, Scroll Up, Scroll Right]
+  - - ''
+    - {type: held}
+    - ''
+    - ''
+  Numbers & Functions:
+  - ['[', '7', '8', '9', ']', ESC, F7, F8, F9, F12]
+  - - {t: '''', h: LCMD}
+    - {t: '4', h: LALT}
+    - {t: '5', h: LCTRL}
+    - {t: '6', h: LSHFT}
+    - '='
+    - .
+    - {t: F4, h: RSHFT}
+    - {t: F5, h: RCTRL}
+    - {t: F6, h: RALT}
+    - {t: F11, h: RCMD}
+  - ['`', '1', '2', '3', \, '', F1, F2, F3, F10]
+  - - '0'
+    - '-'
+    - ''
+    - {type: held}
+  Symbols:
+  - ['{', '&', '*', (, '}', '', '', '', '', '']
+  - ['"', $, '%', ^, +, '', RSHFT, RCTRL, RALT, RCMD]
+  - ['~', '!', '@', '#', '|', '', '', '', '', '']
+  - - )
+    - _
+    - {type: held}
+    - ''

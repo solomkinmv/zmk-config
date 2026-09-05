@@ -11,6 +11,10 @@ nice!nano v2 controllers.
 - `build.yaml` defines the left, right, and settings-reset firmware targets.
 - `.github/workflows/build.yml` builds and packages the firmware with GitHub
   Actions.
+- `keymap_drawer.config.yaml` controls labels and styling for the generated
+  keymap reference.
+- `scripts/render-keymap.sh` regenerates `docs/keymap/cradio.yaml` and the SVG
+  reference from `config/cradio.keymap`.
 - `boards/` and `zephyr/module.yml` provide the standard ZMK module layout for
   future out-of-tree hardware definitions.
 
@@ -31,3 +35,20 @@ flashing the normal image to each half again.
 The ZMK manifest and reusable workflow are pinned to the same stable release.
 Upgrade them together, build all three targets, and keep the previous known-good
 firmware until the new build has been tested on both halves.
+
+## Keymap reference
+
+![Ferris Sweep keymap reference](docs/keymap/cradio.svg)
+
+The generated reference shows every layer using the physical Ferris Sweep
+geometry, including tap/hold labels for home-row modifiers and layer-tap thumb
+keys.
+
+Regenerate it after changing the keymap:
+
+```sh
+./scripts/render-keymap.sh
+```
+
+The script uses `uvx` and pins `keymap-drawer` to version `0.23.0`, so it does
+not require a permanent Python package installation.

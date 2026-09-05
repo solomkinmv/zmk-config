@@ -1,0 +1,34 @@
+name: Verify keymap reference
+
+on:
+  push:
+    paths:
+      - config/cradio.keymap
+      - docs/keymap/**
+      - keymap_drawer.config.yaml
+      - scripts/render-keymap.sh
+      - tests/check-keymap-render.sh
+      - .github/workflows/keymap-reference.yml
+  pull_request:
+    paths:
+      - config/cradio.keymap
+      - docs/keymap/**
+      - keymap_drawer.config.yaml
+      - scripts/render-keymap.sh
+      - tests/check-keymap-render.sh
+      - .github/workflows/keymap-reference.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10
+      - name: Regenerate and verify reference
+        run: |
+          tests/check-keymap-render.sh
+          git diff --exit-code -- docs/keymap

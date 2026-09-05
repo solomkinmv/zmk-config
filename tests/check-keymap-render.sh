@@ -13,20 +13,20 @@ test -s "$yaml"
 test -s "$svg"
 
 for layer in 'Base' 'Media & Navigation' 'Bluetooth & Mouse' 'Numbers & Functions' 'Symbols'; do
-    rg --quiet --fixed-strings "$layer" "$yaml"
+    grep -Fq "$layer" "$yaml"
 done
 
 for activator in 'h: Nav' 'h: Mouse' 'h: Num/Fn' 'h: Sym'; do
-    rg --quiet --fixed-strings "$activator" "$yaml"
+    grep -Fq "$activator" "$yaml"
 done
 
 for label in 'Caps Word' 'Mouse Left' 'Mouse Right' 'Scroll Left' 'Scroll Down' 'Scroll Up' 'Scroll Right'; do
-    rg --quiet --fixed-strings "$label" "$yaml"
+    grep -Fq "$label" "$yaml"
 done
 
-rg --quiet 'class="keymap"' "$svg"
+grep -q 'class="keymap"' "$svg"
 
-if rg --quiet '&(caps_word|mkp|mmv|msc)' "$yaml"; then
+if grep -Eq '&(caps_word|mkp|mmv|msc)' "$yaml"; then
     echo 'raw ZMK bindings remain in parsed keymap' >&2
     exit 1
 fi
